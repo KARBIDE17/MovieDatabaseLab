@@ -124,8 +124,8 @@ MovieClass movie24 = new MovieClass();
 
 MovieClass movie25 = new MovieClass();
 
-movie24.Title = "The Lord Of The Rings Trilogy";
-movie24.Category = "Fantasy";
+    movie25.Title = "The Lord Of The Rings Trilogy";
+    movie25.Category = "Fantasy";
 
 //List
 List<MovieClass> movieList = new List<MovieClass>()
@@ -179,10 +179,12 @@ do
     string userCategory = userInput.ToLower();
 
 
+    if (movieList == null) return;
+
 
         foreach (MovieClass movie in movieList)
         {
-
+            
             if (movie.Category.ToLower() == userCategory)
             {
                 Console.WriteLine("Here are all our favorite movies in the " + userCategory + " category:");
