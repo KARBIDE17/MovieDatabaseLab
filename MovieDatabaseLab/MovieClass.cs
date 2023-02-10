@@ -8,7 +8,7 @@ namespace MovieDatabaseLab
 {
     public class MovieClass
     {
-        public string? Title;
-        public string? Category;
+        public string Title;
+        public string Category;
     }
 }
